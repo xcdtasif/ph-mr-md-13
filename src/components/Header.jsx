@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export default function Header() {
   return (
     <div>
@@ -70,7 +72,9 @@ export default function Header() {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">+ New Ticket</a>
+          <a className="btn">
+            <FontAwesomeIcon icon="fa-solid fa-plus" />
+          </a>
         </div>
       </div>
     </div>
