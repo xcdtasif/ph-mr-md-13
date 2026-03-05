@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1001,
+    "title": "Unable to Reset Password via Email",
+    "description": "Customer has not received the password reset email after multiple attempts. They have checked their spam folder and confirmed the email address on file is correct.",
+    "customer": "James Carter",
+    "priority": "high",
+    "status": "open",
+    "createdAt": "15-01-24"
+  },
+  {
+    "id": 1002,
+    "title": "Checkout Page Freezes on Payment",
+    "description": "Customer reports that the checkout page becomes unresponsive when they attempt to enter card details. The issue occurs consistently on Safari and Chrome browsers.",
+    "customer": "Amelia Brooks",
+    "priority": "high",
+    "status": "resolved",
+    "createdAt": "16-01-24"
+  },
+  {
+    "id": 1003,
+    "title": "Subscription Plan Not Upgrading",
+    "description": "Customer paid for a plan upgrade but their account still reflects the old plan. The payment was deducted from their account but the features have not been unlocked.",
+    "customer": "Noah Bennett",
+    "priority": "medium",
+    "status": "inProgress",
+    "createdAt": "17-01-24"
+  },
+  {
+    "id": 1004,
+    "title": "Wrong Item Delivered",
+    "description": "Customer received a completely different product than what was ordered. The packaging label shows the correct order number but the contents do not match.",
+    "customer": "Sophia Reed",
+    "priority": "low",
+    "status": "resolved",
+    "createdAt": "18-01-24"
+  },
+  {
+    "id": 1005,
+    "title": "Dashboard Data Not Loading",
+    "description": "Customer's dashboard displays a blank screen after logging in. All widgets and analytics data fail to load and the page shows a spinning loader indefinitely.",
+    "customer": "Ethan Sullivan",
+    "priority": "high",
+    "status": "open",
+    "createdAt": "19-01-24"
+  },
+  {
+    "id": 1006,
+    "title": "Invoice Showing Incorrect Tax Amount",
+    "description": "Customer noticed that the tax amount on their latest invoice does not match the rate applicable to their region. They have attached the invoice for reference.",
+    "customer": "Charlotte Hayes",
+    "priority": "medium",
+    "status": "inProgress",
+    "createdAt": "20-01-24"
+  },
+  {
+    "id": 1007,
+    "title": "API Key Stopped Working Unexpectedly",
+    "description": "Customer's API key was functioning correctly until yesterday when all requests started returning a 401 unauthorized error. No changes were made to their integration.",
+    "customer": "Lucas Morgan",
+    "priority": "high",
+    "status": "open",
+    "createdAt": "21-01-24"
+  },
+  {
+    "id": 1008,
+    "title": "Email Notifications Not Being Received",
+    "description": "Customer is not receiving any email notifications for order updates or account activity. Their email preferences are correctly configured and the address is verified.",
+    "customer": "Isla Foster",
+    "priority": "low",
+    "status": "resolved",
+    "createdAt": "22-01-24"
+  },
+  {
+    "id": 1009,
+    "title": "Dark Mode Not Saving Preference",
+    "description": "Customer switches to dark mode from settings but the preference resets back to light mode every time they log out and log back in to the application.",
+    "customer": "Oliver Grant",
+    "priority": "medium",
+    "status": "inProgress",
+    "createdAt": "23-01-24"
+  },
+  {
+    "id": 1010,
+    "title": "File Upload Failing for Large Documents",
+    "description": "Customer is unable to upload documents larger than 5MB despite the platform advertising a 20MB limit. The upload progress bar reaches 100% but then throws a server error.",
+    "customer": "Emma Lawson",
+    "priority": "medium",
+    "status": "open",
+    "createdAt": "24-01-24"
+  }
+]
