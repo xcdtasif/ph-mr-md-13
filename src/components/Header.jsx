@@ -2,8 +2,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Header() {
   return (
-    <div className="max-w-6xl mx-auto">
-      <div className="navbar">
+    <div className="bg-white text-black">
+      {/* header */}
+      <div className="navbar max-w-360 mx-auto px-16">
+        {/* left */}
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -47,8 +49,12 @@ export default function Header() {
               </li>
             </ul>
           </div>
-          <a className="text-xl font-bold">CS — Ticket System</a>
+          <a href="#" className="text-xl font-bold">
+            CS — Ticket System
+          </a>
         </div>
+
+        {/* center */}
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
@@ -71,6 +77,8 @@ export default function Header() {
             </li>
           </ul>
         </div>
+
+        {/* right */}
         <div className="navbar-end">
           <a className="btn btn-primary">
             <FontAwesomeIcon icon="fa-solid fa-plus" />
