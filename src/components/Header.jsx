@@ -74,6 +74,7 @@ export default function Header() {
         <div className="navbar-end">
           <a className="btn">
             <FontAwesomeIcon icon="fa-solid fa-plus" />
+            <span className="ml-0">New Ticket</span>
           </a>
         </div>
       </div>
