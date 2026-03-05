@@ -130,7 +130,7 @@ export default function Footer() {
         <hr className="text-[#D9D9D9]/20" />
 
         {/* copyright */}
-        <p className="text-center text-[#A1A1AA] py-4">
+        <p className="text-sm text-center text-[#A1A1AA] py-4">
           © 2025 CS — Ticket System. All rights reserved.
         </p>
       </footer>
