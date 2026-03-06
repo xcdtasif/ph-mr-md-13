@@ -2,3 +2,6 @@
 @plugin "daisyui" {
   themes: emerald --default;
 }
+[data-theme="emerald"] {
+  color-scheme: light;
+}
