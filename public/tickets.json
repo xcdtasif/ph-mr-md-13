@@ -14,7 +14,7 @@
     "description": "Customer reports that the checkout page becomes unresponsive when they attempt to enter card details. The issue occurs consistently on Safari and Chrome browsers.",
     "customer": "Amelia Brooks",
     "priority": "high",
-    "status": "resolved",
+    "status": "open",
     "createdAt": "16-01-24"
   },
   {
@@ -23,7 +23,7 @@
     "description": "Customer paid for a plan upgrade but their account still reflects the old plan. The payment was deducted from their account but the features have not been unlocked.",
     "customer": "Noah Bennett",
     "priority": "medium",
-    "status": "inProgress",
+    "status": "open",
     "createdAt": "17-01-24"
   },
   {
@@ -32,7 +32,7 @@
     "description": "Customer received a completely different product than what was ordered. The packaging label shows the correct order number but the contents do not match.",
     "customer": "Sophia Reed",
     "priority": "low",
-    "status": "resolved",
+    "status": "open",
     "createdAt": "18-01-24"
   },
   {
@@ -50,7 +50,7 @@
     "description": "Customer noticed that the tax amount on their latest invoice does not match the rate applicable to their region. They have attached the invoice for reference.",
     "customer": "Charlotte Hayes",
     "priority": "medium",
-    "status": "inProgress",
+    "status": "open",
     "createdAt": "20-01-24"
   },
   {
@@ -68,7 +68,7 @@
     "description": "Customer is not receiving any email notifications for order updates or account activity. Their email preferences are correctly configured and the address is verified.",
     "customer": "Isla Foster",
     "priority": "low",
-    "status": "resolved",
+    "status": "open",
     "createdAt": "22-01-24"
   },
   {
@@ -77,7 +77,7 @@
     "description": "Customer switches to dark mode from settings but the preference resets back to light mode every time they log out and log back in to the application.",
     "customer": "Oliver Grant",
     "priority": "medium",
-    "status": "inProgress",
+    "status": "open",
     "createdAt": "23-01-24"
   },
   {

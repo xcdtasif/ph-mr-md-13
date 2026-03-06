@@ -2,7 +2,7 @@ import ActiveTicket from "../Ticket/ActiveTicket";
 import InProgressTicket from "../Ticket/InProgressTicket";
 import ResolvedTicket from "../Ticket/ResolvedTicket";
 
-export default function Tickets({ tickets }) {
+export default function Tickets({ tickets, handleActive, handleResolved }) {
   return (
     <div>
       {/* tickets */}
@@ -15,7 +15,11 @@ export default function Tickets({ tickets }) {
             {tickets
               .filter((ticket) => ticket.status !== "resolved")
               .map((ticket) => (
-                <ActiveTicket key={ticket.id} ticket={ticket} />
+                <ActiveTicket
+                  key={ticket.id}
+                  ticket={ticket}
+                  handleActive={handleActive}
+                />
               ))}
           </div>
         </div>
@@ -27,11 +31,21 @@ export default function Tickets({ tickets }) {
             <h2 className="text-2xl font-semibold">In-Progress Tickets</h2>
 
             <div className="">
-              {tickets
-                .filter((ticket) => ticket.status === "inProgress")
-                .map((ticket) => (
-                  <InProgressTicket key={ticket.id} ticket={ticket} />
-                ))}
+              {tickets.filter((t) => t.status === "inProgress").length === 0 ? (
+                <p className="text-[#627382] my-8">
+                  Select a Ticket to mark it as In-Progress.
+                </p>
+              ) : (
+                tickets
+                  .filter((ticket) => ticket.status === "inProgress")
+                  .map((ticket) => (
+                    <InProgressTicket
+                      key={ticket.id}
+                      ticket={ticket}
+                      handleResolved={handleResolved}
+                    />
+                  ))
+              )}
             </div>
           </div>
 
@@ -40,11 +54,15 @@ export default function Tickets({ tickets }) {
             <h2 className="text-2xl font-semibold">Resolved Tickets</h2>
 
             <div className="">
-              {tickets
-                .filter((ticket) => ticket.status === "resolved")
-                .map((ticket) => (
-                  <ResolvedTicket key={ticket.id} ticket={ticket} />
-                ))}
+              {tickets.filter((t) => t.status === "resolved").length === 0 ? (
+                <p className="text-[#627382] my-8">No ticket marked as Resolved.</p>
+              ) : (
+                tickets
+                  .filter((ticket) => ticket.status === "resolved")
+                  .map((ticket) => (
+                    <ResolvedTicket key={ticket.id} ticket={ticket} />
+                  ))
+              )}
             </div>
           </div>
         </div>
