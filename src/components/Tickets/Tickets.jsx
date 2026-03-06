@@ -1,17 +1,8 @@
-import { useEffect, useState } from "react";
 import ActiveTicket from "../Ticket/ActiveTicket";
 import InProgressTicket from "../Ticket/InProgressTicket";
 import ResolvedTicket from "../Ticket/ResolvedTicket";
 
-export default function Tickets() {
-  const [tickets, setTickets] = useState([]);
-
-  useEffect(() => {
-    fetch("/tickets.json")
-      .then((response) => response.json())
-      .then((data) => setTickets(data));
-  }, []);
-
+export default function Tickets({ tickets }) {
   return (
     <div>
       {/* tickets */}

@@ -1,6 +1,15 @@
+import { useEffect, useState } from "react";
 import Tickets from "../Tickets/Tickets";
 
 export default function Dashboard() {
+  const [tickets, setTickets] = useState([]);
+
+  useEffect(() => {
+    fetch("/tickets.json")
+      .then((response) => response.json())
+      .then((data) => setTickets(data));
+  }, []);
+
   return (
     <div className="bg-[#f5f5f5] text-black">
       {/* dashboard */}
@@ -10,17 +19,17 @@ export default function Dashboard() {
           {/* in-progress */}
           <div className="bg-white text-center my-8 p-16 rounded-2xl">
             <h2 className="text-xl">In-Progress</h2>
-            <p className="text-6xl font-semibold">0</p>
+            <p className="text-6xl font-semibold">{tickets.length}</p>
           </div>
 
           {/* resolved */}
           <div className="bg-white text-center my-8 p-16 rounded-2xl">
             <h2 className="text-xl">Resolved</h2>
-            <p className="text-6xl font-semibold">0</p>
+            <p className="text-6xl font-semibold">{tickets.length}</p>
           </div>
         </div>
 
-        <Tickets />
+        <Tickets tickets={tickets} />
       </div>
     </div>
   );

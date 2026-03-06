@@ -10,3 +10,4 @@ https://tailwindcss.com/docs/installation/using-vite <br>
 https://daisyui.com/docs/install/ <br>
 https://surge.sh/help/getting-started-with-surge <br>
 https://docs.fontawesome.com/web/use-with/react/ <br>
+https://www.npmjs.com/package/react-toastify <br>
