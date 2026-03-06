@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { toast } from "react-toastify";
 
 export default function Header() {
   return (
@@ -77,7 +76,7 @@ export default function Header() {
               <a href="#">Contact</a>
             </li>
           </ul>
-          <a className="btn btn-primary" onClick={() => toast("Too easy!")}>
+          <a href="#" className="btn bg-black text-white">
             <FontAwesomeIcon icon="fa-solid fa-plus" />
             <span className="font-semibold">New Ticket</span>
           </a>

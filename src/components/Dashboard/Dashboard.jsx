@@ -37,7 +37,15 @@ export default function Dashboard() {
       {/* dashboard */}
       <div className="max-w-360 mx-auto gap-8 p-16">
         {/* ticket stats */}
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-3 gap-8">
+          {/* in-progress */}
+          <div className="bg-white text-center my-8 p-16 rounded-2xl">
+            <h2 className="text-xl">Open</h2>
+            <p className="text-6xl font-semibold">
+              {tickets.filter((t) => t.status === "open").length}
+            </p>
+          </div>
+
           {/* in-progress */}
           <div className="bg-white text-center my-8 p-16 rounded-2xl">
             <h2 className="text-xl">In-Progress</h2>
