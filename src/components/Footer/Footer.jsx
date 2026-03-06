@@ -4,9 +4,9 @@ export default function Footer() {
   return (
     <div className="bg-black text-white">
       {/* footer */}
-      <footer className="max-w-360 mx-auto gap-0 px-16">
+      <footer className="max-w-360 mx-auto gap-8 px-16">
         {/* grid */}
-        <div className="grid grid-cols-[auto_auto_auto_auto_auto] gap-32 py-8">
+        <div className="grid grid-cols-[auto_auto_auto_auto_auto] gap-16 py-8">
           {/* cs — ticket system */}
           <div className="space-y-4">
             <div className="text-xl font-bold">

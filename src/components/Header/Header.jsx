@@ -30,22 +30,22 @@ export default function Header() {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Home</a>
+                <a href="#">Home</a>
               </li>
               <li>
-                <a>FAQ</a>
+                <a href="#">FAQ</a>
               </li>
               <li>
-                <a>Changelog</a>
+                <a href="#">Changelog</a>
               </li>
               <li>
-                <a>Blog</a>
+                <a href="#">Blog</a>
               </li>
               <li>
-                <a>Download</a>
+                <a href="#">Download</a>
               </li>
               <li>
-                <a>Contact</a>
+                <a href="#">Contact</a>
               </li>
             </ul>
           </div>
@@ -54,32 +54,28 @@ export default function Header() {
           </a>
         </div>
 
-        {/* center */}
-        <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li>
-              <a>Home</a>
-            </li>
-            <li>
-              <a>FAQ</a>
-            </li>
-            <li>
-              <a>Changelog</a>
-            </li>
-            <li>
-              <a>Blog</a>
-            </li>
-            <li>
-              <a>Download</a>
-            </li>
-            <li>
-              <a>Contact</a>
-            </li>
-          </ul>
-        </div>
-
         {/* right */}
         <div className="navbar-end">
+          <ul className="menu menu-horizontal px-1 hidden lg:flex">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">FAQ</a>
+            </li>
+            <li>
+              <a href="#">Changelog</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Download</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
           <a className="btn btn-primary">
             <FontAwesomeIcon icon="fa-solid fa-plus" />
             <span className="font-semibold">New Ticket</span>

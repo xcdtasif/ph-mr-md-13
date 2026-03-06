@@ -1,11 +1,14 @@
 import "./App.css";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import Dashboard from "./components/Dashboard/Dashboard";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <div>
       <Header />
+
+      <Dashboard />
 
       <Footer />
     </div>

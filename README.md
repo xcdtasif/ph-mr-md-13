@@ -34,7 +34,7 @@ export default function Counter() {
 
 State can be shared between components by moving it to the closest common parent component. This is called "lifting state up" which means that the parent holds the state and passes it down as props.
 
-Alternatively, React Context can be used to avoid prop drilling while sharing state. In large apps, state management libraries such as Redux are used to manage shared state across many components.
+Alternatively, React Context can be used to avoid prop drilling while sharing state. In large apps, state management libraries, such as Redux, are used to manage shared state across many components.
 
 ### How is event handling done in React?
 
